@@ -3,21 +3,21 @@ package com.zetcode;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
-public class Snake extends JFrame {
+public class Had extends JFrame {
 
-    public Snake() {
+    public Had() {
         
         initUI();
     }
     
     private void initUI() {
         
-        add(new Board());
+        add(new Doska());
                
         setResizable(false);
         pack();
         
-        setTitle("Snake");
+        setTitle("Had");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
@@ -26,7 +26,7 @@ public class Snake extends JFrame {
     public static void main(String[] args) {
         
         EventQueue.invokeLater(() -> {
-            JFrame ex = new Snake();
+            JFrame ex = new Had();
             ex.setVisible(true);
         });
     }
